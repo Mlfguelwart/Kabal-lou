@@ -1,0 +1,17 @@
+x = input("saisir une chaine non vide")
+print(x)
+index = int(input("saisir l'index"))
+print(index)
+if(   (index >= 0 | index <= len(x)) | bool(x!="") ):
+    if len(x)==0 :
+        tableau=list(x)
+        print(tableau)
+        caracteresupprime=tableau.pop(index)
+        print("caractere supprime est :"  + str(caracteresupprime))
+        resultat= "".join(tableau)
+        print("le resultat est :" + resultat) 
+    else:
+        print("chaine vide")
+else:
+    print("index invalide ou chaine vide")
+    
